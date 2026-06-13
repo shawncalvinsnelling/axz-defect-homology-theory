@@ -1,0 +1,37 @@
+# Optional GitHub Actions workflow template.
+# GitHub requires this to live at: .github/workflows/verify.yml
+# This visible-only upload package does not include hidden folders.
+# To enable Actions later, create .github/workflows/verify.yml and paste the YAML below.
+
+name: AXZ Verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install requirements
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run AXZ replay
+        run: |
+          bash RUN_ALL.sh
+
+      - name: Run pytest
+        run: |
+          pytest -q

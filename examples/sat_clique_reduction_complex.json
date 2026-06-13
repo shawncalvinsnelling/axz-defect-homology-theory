@@ -1,0 +1,42 @@
+{
+  "name": "sat_clique_reduction_complex_demo",
+  "description": "Toy SAT-to-CLIQUE reduction audit; P vs NP not claimed.",
+  "dimensions": {
+    "C": 1,
+    "R": 2,
+    "G": 2,
+    "H": 1
+  },
+  "d1": [
+    [
+      1
+    ],
+    [
+      1
+    ]
+  ],
+  "d2": [
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "d3": [
+    [
+      0,
+      1
+    ]
+  ],
+  "nano_gap_gates": [
+    {
+      "gate_id": "REDUCTION-GATE",
+      "gamma": 1.0,
+      "epsilon": 0.0
+    }
+  ],
+  "truth_boundary": "finite reduction audit only"
+}

@@ -1,0 +1,103 @@
+{
+  "all_replay_ok": true,
+  "checked": 12,
+  "receipt_sha256": "ea5a123191d7a8273114bbe1399d5f7900da3dd332a45ef8c430bad05082f92f",
+  "results": [
+    {
+      "file": "receipts/ai_firewall_complex_homology.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "c77fee94194af37ac696061bceccc75958368b7ebb8d9e19a27a5d984a0c4c19",
+      "replay_ok": true,
+      "stored": "c77fee94194af37ac696061bceccc75958368b7ebb8d9e19a27a5d984a0c4c19",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    },
+    {
+      "file": "receipts/bad_chain_d2d1_homology.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "e943afff8e82078400c33d743252713b034844f92e34b78992c478999b2eceb7",
+      "replay_ok": true,
+      "stored": "e943afff8e82078400c33d743252713b034844f92e34b78992c478999b2eceb7",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    },
+    {
+      "file": "receipts/bad_chain_d3d2_homology.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "8dad0f9f09b2bae3273b02e24d60f35f7b6fa745bad25b6d27675b39db283bd7",
+      "replay_ok": true,
+      "stored": "8dad0f9f09b2bae3273b02e24d60f35f7b6fa745bad25b6d27675b39db283bd7",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    },
+    {
+      "file": "receipts/erdos_straus_gate_complex_homology.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "74d5541647a3213f04f0e508471d6d03672f22b9379da0e4e90e1d7f17672cdd",
+      "replay_ok": true,
+      "stored": "74d5541647a3213f04f0e508471d6d03672f22b9379da0e4e90e1d7f17672cdd",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    },
+    {
+      "file": "receipts/full_closed_chain_homology.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "c2090b9be21da744ef4df948c2c19f45ea37e71fc340e5a714eb384b028280f9",
+      "replay_ok": true,
+      "stored": "c2090b9be21da744ef4df948c2c19f45ea37e71fc340e5a714eb384b028280f9",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    },
+    {
+      "file": "receipts/microscope_telemetry_complex_homology.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "30295c8bb8e0541671bef207f5365a12188cb3e79a109f87ccee6b5d4f2a25bd",
+      "replay_ok": true,
+      "stored": "30295c8bb8e0541671bef207f5365a12188cb3e79a109f87ccee6b5d4f2a25bd",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    },
+    {
+      "file": "receipts/open_gate_receipt_obstruction_homology.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "56aca7d7ae3eb670c85b84c431b577b58d2f7f6cd3fbe205526c1fb709e399d3",
+      "replay_ok": true,
+      "stored": "56aca7d7ae3eb670c85b84c431b577b58d2f7f6cd3fbe205526c1fb709e399d3",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    },
+    {
+      "file": "receipts/open_residual_obstruction_homology.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "028e450e6243a15b5131f04eb796e182bcaba6e1779b08bf8985daefb3e8b786",
+      "replay_ok": true,
+      "stored": "028e450e6243a15b5131f04eb796e182bcaba6e1779b08bf8985daefb3e8b786",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    },
+    {
+      "file": "receipts/sat_clique_reduction_complex_homology.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "98b37cf9f457c6c6deb32a3234d1b0a225ec8e779385c5b35a466740b80824a7",
+      "replay_ok": true,
+      "stored": "98b37cf9f457c6c6deb32a3234d1b0a225ec8e779385c5b35a466740b80824a7",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    },
+    {
+      "file": "receipts/full_closed_chain_nanogap.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "8fee8356a1a03df56c446836b36ad519c8f44486c0143aae992211c7a05cf74c",
+      "replay_ok": true,
+      "stored": "8fee8356a1a03df56c446836b36ad519c8f44486c0143aae992211c7a05cf74c",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    },
+    {
+      "file": "receipts/microscope_telemetry_complex_nanogap.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "cbb28eec11d2c1254ef3a0f0ed04928c7556e3318bb4b5e93496e78d13a4e2d8",
+      "replay_ok": true,
+      "stored": "cbb28eec11d2c1254ef3a0f0ed04928c7556e3318bb4b5e93496e78d13a4e2d8",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    },
+    {
+      "file": "receipts/microscope_telemetry_nanogap.json",
+      "hash_key": "receipt_sha256",
+      "recomputed": "cbb28eec11d2c1254ef3a0f0ed04928c7556e3318bb4b5e93496e78d13a4e2d8",
+      "replay_ok": true,
+      "stored": "cbb28eec11d2c1254ef3a0f0ed04928c7556e3318bb4b5e93496e78d13a4e2d8",
+      "truth_label": "RECEIPT_REPLAY_PASS"
+    }
+  ]
+}

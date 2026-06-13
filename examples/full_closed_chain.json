@@ -1,0 +1,41 @@
+{
+  "name": "full_closed_chain",
+  "description": "Both homology groups vanish.",
+  "dimensions": {
+    "C": 1,
+    "R": 2,
+    "G": 2,
+    "H": 1
+  },
+  "d1": [
+    [
+      1
+    ],
+    [
+      1
+    ]
+  ],
+  "d2": [
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "d3": [
+    [
+      0,
+      1
+    ]
+  ],
+  "nano_gap_gates": [
+    {
+      "gate_id": "G0",
+      "gamma": 0.1,
+      "epsilon": 0.01
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AXZ Defect Homology Theory — Ultimate Release</title>
+  <meta name="description" content="Finite proof-audit framework for AXZ defect homology, obstruction classes, nano-gap stability, and replayable receipts." />
+  <style>
+    :root{
+      --bg:#030712; --panel:#07111f; --panel2:#0b1629; --line:#1e3a5f;
+      --text:#edf7ff; --muted:#a8bfd8; --cyan:#56d6ff; --gold:#ffd76a; --green:#54f6a2; --purple:#b986ff; --red:#ff6b83;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at 50% 12%,#12325f 0,#06101d 38%,#02050c 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.55}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(120deg,rgba(86,214,255,.08),transparent 32%,rgba(185,134,255,.08)),repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 1px,transparent 1px 80px),repeating-linear-gradient(0deg,rgba(255,255,255,.018) 0 1px,transparent 1px 80px);mask-image:linear-gradient(#000,transparent 88%)}
+    .wrap{width:min(1180px,calc(100% - 32px));margin:auto;position:relative;z-index:1}
+    header{padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+    .logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#56d6ff,#7b61ff);display:grid;place-items:center;box-shadow:0 0 36px rgba(86,214,255,.35);font-weight:900;color:#001}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:.92rem} nav a:hover{color:var(--cyan)}
+    .hero{padding:46px 0 28px;text-align:center}
+    h1{font-size:clamp(2.6rem,7vw,5.6rem);line-height:.92;margin:0;text-shadow:0 0 28px rgba(86,214,255,.28)}
+    .subtitle{font-size:clamp(1.05rem,2.2vw,1.45rem);color:#dbeafe;max-width:880px;margin:20px auto 0}
+    .truth{display:inline-flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center;border:1px solid rgba(86,214,255,.32);background:rgba(3,12,24,.68);padding:10px 14px;border-radius:999px;margin-top:22px;color:var(--muted);font-size:.88rem}
+    .pill{border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:4px 9px}.pill.good{color:var(--green);border-color:rgba(84,246,162,.36)}.pill.warn{color:var(--gold);border-color:rgba(255,215,106,.38)}
+    .chain{margin:38px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:880px;align-items:center}
+    .node{background:linear-gradient(180deg,rgba(12,27,49,.95),rgba(7,17,31,.92));border:1px solid rgba(86,214,255,.32);border-radius:22px;padding:18px;box-shadow:0 0 28px rgba(86,214,255,.08)}
+    .node b{display:block;font-size:2.2rem}.c{color:#55b9ff}.r{color:var(--gold)}.g{color:var(--green)}.h{color:var(--purple)}
+    .arrow{color:var(--cyan);font-size:1.5rem;display:none}
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;margin:34px 0}.card{background:rgba(7,17,31,.78);border:1px solid rgba(86,214,255,.22);border-radius:24px;padding:24px;box-shadow:0 20px 70px rgba(0,0,0,.28)}
+    h2{margin:0 0 12px;font-size:1.6rem} h3{margin:18px 0 8px;color:#dff6ff}.muted{color:var(--muted)}
+    pre{white-space:pre-wrap;background:#030912;border:1px solid rgba(86,214,255,.2);border-radius:16px;padding:16px;color:#dff6ff;overflow:auto}
+    .formula{font-size:1.07rem;color:#eafcff}.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.kpi div{border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:14px;background:rgba(255,255,255,.035)}.kpi b{display:block;color:var(--cyan);font-size:1.35rem}
+    .features{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin:28px 0}.feature{background:rgba(11,22,41,.78);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:16px;text-align:center}.feature .icon{font-size:1.65rem;display:block;margin-bottom:6px}
+    .preview{width:100%;border-radius:20px;border:1px solid rgba(86,214,255,.25);box-shadow:0 0 50px rgba(86,214,255,.1);margin-top:10px}
+    .buttons{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:28px 0}.btn{display:inline-block;text-decoration:none;color:#001;background:var(--cyan);font-weight:800;border-radius:12px;padding:12px 16px}.btn.alt{background:transparent;color:var(--cyan);border:1px solid rgba(86,214,255,.42)}
+    footer{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding:28px 0;color:var(--muted);font-size:.92rem;text-align:center}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr 1fr}.kpi{grid-template-columns:1fr}nav{display:none}}
+    @media(max-width:520px){.features,.chain{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><div class="logo">AXZ</div><div>Axezent<br><span class="muted">Proof Audit</span></div></div>
+      <nav><a href="#theorem">Theorem</a><a href="#run">Run</a><a href="#examples">Examples</a><a href="#truth">Truth Boundary</a></nav>
+    </header>
+
+    <section class="hero">
+      <h1>AXZ Defect Homology Theory</h1>
+      <p class="subtitle">A finite topological certificate theory for claims, residuals, gates, and receipts.</p>
+      <div class="truth"><span class="pill good">Finite proof-audit</span><span class="pill good">Nano-gap stability</span><span class="pill good">Replayable receipts</span><span class="pill warn">No global open-problem claims</span></div>
+      <div class="chain" aria-label="AXZ chain complex">
+        <div class="node"><b class="c">C</b><span>Claim Space</span></div>
+        <div class="node"><b class="r">R</b><span>Residual / Defect Space</span></div>
+        <div class="node"><b class="g">G</b><span>Gate Space</span></div>
+        <div class="node"><b class="h">H</b><span>Receipt Space</span></div>
+      </div>
+    </section>
+
+    <section class="grid" id="theorem">
+      <div class="card">
+        <h2>Primary theorem</h2>
+        <p class="muted">The Snelling Defect Homology Theorem turns a bounded verification system into a chain-complex-style audit object over F₂.</p>
+        <pre class="formula">C --∂1--> R --∂2--> G --∂3--> H
+
+Chain conditions:
+∂2∂1 = 0
+∂3∂2 = 0
+
+Obstruction groups:
+H_R^AXZ(K) = ker(∂2) / im(∂1)
+H_G^AXZ(K) = ker(∂3) / im(∂2)</pre>
+        <p>A finite audit complex is closed when both obstruction groups vanish and its nano-gap receipts replay.</p>
+      </div>
+      <div class="card" id="run">
+        <h2>Run locally</h2>
+        <pre>python verifier/defect_homology.py examples/full_closed_chain.json
+python verifier/nano_gap_stability.py examples/full_closed_chain.json
+bash RUN_ALL.sh</pre>
+        <div class="kpi"><div><b>PASS</b><span>finite replay</span></div><div><b>F₂</b><span>chain complex</span></div><div><b>JSON</b><span>receipt schema</span></div></div>
+      </div>
+    </section>
+
+    <section class="features" id="examples">
+      <div class="feature"><span class="icon">🧾</span><b>Receipt Replay</b><br><span class="muted">hash-bound verification outputs</span></div>
+      <div class="feature"><span class="icon">🧩</span><b>Obstruction Classes</b><br><span class="muted">closed vs open finite systems</span></div>
+      <div class="feature"><span class="icon">📐</span><b>Nano-Gap</b><br><span class="muted">stability under replay margins</span></div>
+      <div class="feature"><span class="icon">🔬</span><b>Examples</b><br><span class="muted">AI, microscope, SAT, ES gate</span></div>
+      <div class="feature"><span class="icon">✅</span><b>Truth Labels</b><br><span class="muted">no claim without evidence</span></div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Repository + live website view</h2>
+        <p class="muted">This package includes a root <b>index.html</b>, so GitHub Pages can open directly from <b>main / root</b>.</p>
+        <img class="preview" src="public/assets/axz_repo_pages_mockup.png" alt="Mockup of AXZ Defect Homology Theory GitHub repository and live GitHub Pages website" />
+      </div>
+      <div class="card" id="truth">
+        <h2>Truth boundary</h2>
+        <p>This project does not claim to solve RH, P vs NP, Erdős–Straus globally, Navier–Stokes, Hodge, Beal, or any other infinite/global conjecture.</p>
+        <p class="muted">It provides a finite verification and proof-audit framework for bounded systems.</p>
+        <pre>Idea → invariant → residual → defect → gate → certificate → receipt → truth label</pre>
+        <div class="buttons"><a class="btn" href="README.md">README</a><a class="btn alt" href="THEOREM.md">Theorem</a><a class="btn alt" href="docs/ARCHITECTURE.md">Architecture</a></div>
+      </div>
+    </section>
+
+    <footer>AXZ Defect Homology Theory — Ultimate GitHub Pages Release · MIT License · Finite proof-audit framework</footer>
+  </div>
+</body>
+</html>

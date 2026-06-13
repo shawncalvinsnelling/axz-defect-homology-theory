@@ -1,0 +1,16 @@
+{
+  "all_stable": true,
+  "gates_checked": 1,
+  "name": "full_closed_chain",
+  "receipt_sha256": "8fee8356a1a03df56c446836b36ad519c8f44486c0143aae992211c7a05cf74c",
+  "results": [
+    {
+      "epsilon": 0.01,
+      "gamma": 0.1,
+      "gate_id": "G0",
+      "margin": 0.09000000000000001,
+      "stable": true
+    }
+  ],
+  "truth_label": "NANO_GAP_STABLE"
+}

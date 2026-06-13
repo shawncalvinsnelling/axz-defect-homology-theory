@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "AXZ Defect Homology Theory"
+message: "If you use this software, please cite this repository."
+type: software
+authors:
+  - family-names: Snelling
+    given-names: Shawn Calvin
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/shawncalvinsnelling/axz-defect-homology-theory"
+abstract: "A finite chain-complex proof-audit framework for residual defects, gate obligations, nano-gap stability, and replayable receipts."

@@ -1,0 +1,23 @@
+[project]
+name = "axz-defect-homology-theory"
+version = "1.0.0"
+description = "Finite chain-complex proof-audit framework for residual defects, gates, receipts, and nano-gap stability."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Shawn Calvin Snelling"}]
+keywords = ["verification", "homology", "proof-audit", "receipts", "finite-math"]
+
+[project.urls]
+Homepage = "https://github.com/shawncalvinsnelling/axz-defect-homology-theory"
+Repository = "https://github.com/shawncalvinsnelling/axz-defect-homology-theory"
+
+[project.scripts]
+axz-defect-homology = "verifier.defect_homology:main"
+axz-nanogap = "verifier.nano_gap_stability:main"
+axz-receipt-replay = "verifier.receipt_replay:main"
+axz-validate-complex = "verifier.validate_complex:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

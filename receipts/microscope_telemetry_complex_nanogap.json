@@ -1,0 +1,23 @@
+{
+  "all_stable": true,
+  "gates_checked": 2,
+  "name": "microscope_telemetry_complex_demo",
+  "receipt_sha256": "cbb28eec11d2c1254ef3a0f0ed04928c7556e3318bb4b5e93496e78d13a4e2d8",
+  "results": [
+    {
+      "epsilon": 0.01,
+      "gamma": 0.1,
+      "gate_id": "DRIFT-GATE",
+      "margin": 0.09000000000000001,
+      "stable": true
+    },
+    {
+      "epsilon": 0.02,
+      "gamma": 0.2,
+      "gate_id": "PHASE-GATE",
+      "margin": 0.18000000000000002,
+      "stable": true
+    }
+  ],
+  "truth_label": "NANO_GAP_STABLE"
+}

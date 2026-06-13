@@ -1,0 +1,49 @@
+{
+  "name": "erdos_straus_gate_complex_demo",
+  "description": "Toy finite-prefix gate complex; global conjecture not claimed.",
+  "dimensions": {
+    "C": 2,
+    "R": 3,
+    "G": 1,
+    "H": 1
+  },
+  "d1": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "d2": [
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "d3": [
+    [
+      0
+    ]
+  ],
+  "nano_gap_gates": [
+    {
+      "gate_id": "ES-SMOOTH",
+      "gamma": 1.0,
+      "epsilon": 0.0
+    },
+    {
+      "gate_id": "ES-FALLBACK",
+      "gamma": 1.0,
+      "epsilon": 0.0
+    }
+  ],
+  "truth_boundary": "finite-prefix demo only"
+}

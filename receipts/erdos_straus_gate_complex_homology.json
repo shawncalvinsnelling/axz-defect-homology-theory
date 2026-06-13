@@ -1,0 +1,19 @@
+{
+  "chain_condition_d2_d1_zero": true,
+  "chain_condition_d3_d2_zero": true,
+  "dim_HG_AXZ": 0,
+  "dim_HR_AXZ": 0,
+  "dimension_check": true,
+  "full_axz_closed": true,
+  "full_chain_complex": true,
+  "gate_receipt_closed": true,
+  "name": "erdos_straus_gate_complex_demo",
+  "nullity_d2": 2,
+  "nullity_d3": 1,
+  "rank_d1": 2,
+  "rank_d2": 1,
+  "rank_d3": 0,
+  "receipt_sha256": "74d5541647a3213f04f0e508471d6d03672f22b9379da0e4e90e1d7f17672cdd",
+  "residual_defect_closed": true,
+  "truth_label": "AXZ_FULL_CHAIN_CLOSED"
+}

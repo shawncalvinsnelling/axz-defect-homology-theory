@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://axezent.ai/schemas/axz_receipt.schema.json",
+  "title": "AXZ Verification Receipt",
+  "type": "object",
+  "required": ["name", "truth_label", "receipt_sha256"],
+  "additionalProperties": true,
+  "properties": {
+    "name": {"type": ["string", "null"]},
+    "truth_label": {"type": "string"},
+    "receipt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "dimension_check": {"type": "boolean"},
+    "full_chain_complex": {"type": "boolean"},
+    "dim_HR_AXZ": {"type": ["integer", "null"], "minimum": 0},
+    "dim_HG_AXZ": {"type": ["integer", "null"], "minimum": 0},
+    "all_stable": {"type": "boolean"}
+  }
+}

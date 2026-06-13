@@ -1,0 +1,47 @@
+{
+  "name": "ai_firewall_complex_demo",
+  "description": "Toy AI runtime policy-gate receipt complex.",
+  "dimensions": {
+    "C": 2,
+    "R": 2,
+    "G": 2,
+    "H": 2
+  },
+  "d1": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "d2": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "d3": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "nano_gap_gates": [
+    {
+      "gate_id": "POLICY-GATE",
+      "gamma": 0.5,
+      "epsilon": 0.05
+    }
+  ]
+}

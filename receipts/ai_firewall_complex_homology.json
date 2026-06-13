@@ -1,0 +1,19 @@
+{
+  "chain_condition_d2_d1_zero": true,
+  "chain_condition_d3_d2_zero": true,
+  "dim_HG_AXZ": 0,
+  "dim_HR_AXZ": 0,
+  "dimension_check": true,
+  "full_axz_closed": true,
+  "full_chain_complex": true,
+  "gate_receipt_closed": true,
+  "name": "ai_firewall_complex_demo",
+  "nullity_d2": 2,
+  "nullity_d3": 0,
+  "rank_d1": 2,
+  "rank_d2": 0,
+  "rank_d3": 2,
+  "receipt_sha256": "c77fee94194af37ac696061bceccc75958368b7ebb8d9e19a27a5d984a0c4c19",
+  "residual_defect_closed": true,
+  "truth_label": "AXZ_FULL_CHAIN_CLOSED"
+}

@@ -1,0 +1,19 @@
+{
+  "chain_condition_d2_d1_zero": false,
+  "chain_condition_d3_d2_zero": true,
+  "dim_HG_AXZ": 0,
+  "dim_HR_AXZ": null,
+  "dimension_check": true,
+  "full_axz_closed": false,
+  "full_chain_complex": false,
+  "gate_receipt_closed": true,
+  "name": "bad_chain_d2d1",
+  "nullity_d2": 0,
+  "nullity_d3": 1,
+  "rank_d1": 1,
+  "rank_d2": 1,
+  "rank_d3": 0,
+  "receipt_sha256": "e943afff8e82078400c33d743252713b034844f92e34b78992c478999b2eceb7",
+  "residual_defect_closed": false,
+  "truth_label": "AXZ_CHAIN_CONDITION_FAIL"
+}

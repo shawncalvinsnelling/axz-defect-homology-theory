@@ -1,0 +1,14 @@
+{
+  "release_name": "AXZ Defect Homology Theory \u2014 Ultimate Release",
+  "public_tag": "ultimate",
+  "truth_label": "FINITE_PROOF_AUDIT_FRAMEWORK / GLOBAL_OPEN_PROBLEMS_NOT_CLAIMED",
+  "components": [
+    "defect_homology",
+    "nano_gap_stability",
+    "receipt_replay",
+    "json_schemas",
+    "examples",
+    "paper_scaffold",
+    "github_actions"
+  ]
+}

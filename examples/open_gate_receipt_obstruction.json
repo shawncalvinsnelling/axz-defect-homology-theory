@@ -1,0 +1,36 @@
+{
+  "name": "open_gate_receipt_obstruction",
+  "description": "H_G is nonzero.",
+  "dimensions": {
+    "C": 1,
+    "R": 1,
+    "G": 2,
+    "H": 1
+  },
+  "d1": [
+    [
+      1
+    ]
+  ],
+  "d2": [
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "d3": [
+    [
+      0,
+      0
+    ]
+  ],
+  "nano_gap_gates": [
+    {
+      "gate_id": "G0",
+      "gamma": 0.2,
+      "epsilon": 0.01
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# Optional .gitignore contents.
+# GitHub requires this to be named .gitignore.
+# This visible-only upload package does not include hidden files.
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.env
+.DS_Store
+dist/
+build/
+*.egg-info/

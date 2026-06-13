@@ -1,0 +1,19 @@
+{
+  "chain_condition_d2_d1_zero": true,
+  "chain_condition_d3_d2_zero": true,
+  "dim_HG_AXZ": 0,
+  "dim_HR_AXZ": 0,
+  "dimension_check": true,
+  "full_axz_closed": true,
+  "full_chain_complex": true,
+  "gate_receipt_closed": true,
+  "name": "microscope_telemetry_complex_demo",
+  "nullity_d2": 2,
+  "nullity_d3": 0,
+  "rank_d1": 2,
+  "rank_d2": 0,
+  "rank_d3": 2,
+  "receipt_sha256": "30295c8bb8e0541671bef207f5365a12188cb3e79a109f87ccee6b5d4f2a25bd",
+  "residual_defect_closed": true,
+  "truth_label": "AXZ_FULL_CHAIN_CLOSED"
+}

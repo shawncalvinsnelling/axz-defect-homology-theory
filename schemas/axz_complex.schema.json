@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://axezent.ai/schemas/axz_complex.schema.json",
+  "title": "AXZ Defect Homology Complex",
+  "type": "object",
+  "required": ["name", "dimensions", "d1", "d2", "d3"],
+  "additionalProperties": true,
+  "properties": {
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "truth_label": {"type": "string"},
+    "dimensions": {
+      "type": "object",
+      "required": ["C", "R", "G", "H"],
+      "additionalProperties": false,
+      "properties": {
+        "C": {"type": "integer", "minimum": 0},
+        "R": {"type": "integer", "minimum": 0},
+        "G": {"type": "integer", "minimum": 0},
+        "H": {"type": "integer", "minimum": 0}
+      }
+    },
+    "d1": {"$ref": "#/$defs/matrix"},
+    "d2": {"$ref": "#/$defs/matrix"},
+    "d3": {"$ref": "#/$defs/matrix"},
+    "nano_gap_gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["gate_id", "gamma", "epsilon"],
+        "properties": {
+          "gate_id": {"type": "string"},
+          "gamma": {"type": "number", "exclusiveMinimum": 0},
+          "epsilon": {"type": "number", "minimum": 0}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "matrix": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {"type": "integer", "minimum": 0, "maximum": 1}
+      }
+    }
+  }
+}

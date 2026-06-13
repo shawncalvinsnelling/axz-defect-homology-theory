@@ -1,0 +1,54 @@
+{
+  "name": "microscope_telemetry_complex_demo",
+  "description": "Toy read-only telemetry defect complex; no hardware control.",
+  "dimensions": {
+    "C": 2,
+    "R": 2,
+    "G": 2,
+    "H": 2
+  },
+  "d1": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "d2": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "d3": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "nano_gap_gates": [
+    {
+      "gate_id": "DRIFT-GATE",
+      "gamma": 0.1,
+      "epsilon": 0.01
+    },
+    {
+      "gate_id": "PHASE-GATE",
+      "gamma": 0.2,
+      "epsilon": 0.02
+    }
+  ],
+  "read_only": true,
+  "hardware_command": false
+}
